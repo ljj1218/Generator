@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h1>Random Word (attempt #{{counter}})</h1>
+        <form action="/new_number" method="post">
+            {% csrf_token %}
+            {{randomstring}}<br>
+            <input type="submit" value="Generate">
+        </form>
+    </body>
+</html>
